@@ -28,18 +28,13 @@ function generatePassword() {
   if (includeSpecial == 'y') {
     includedChars = includedChars.concat(specialChars);
   }
-  console.log(includedChars);
 
-  var generatedLength = 0;
-  while (generatedLength < 8) {
-    generatedLength = Math.max(8, Math.floor(Math.random() * 129));
-  }
+  passwordLength = window.prompt("How long should your password be?\nPlease select a number between 8 and 128, inclusive.")
 
   var password = "";
 
-  for (i = 0; i < generatedLength; i++) {
+  for (i = 0; i < passwordLength; i++) {
     password += includedChars[Math.floor(Math.random() * includedChars.length)];
-    console.log(password);
   }
 
   return password;
