@@ -1,13 +1,18 @@
 // Assignment code here
 
 var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+//Create list of uppercase letters
 var upperCaseChars = alphabet.split("");
+//Create list of lowercase letters
 var lowerCaseChars = alphabet.toLowerCase().split("");
+//Create list of numbers
 var numericalChars = [1,2,3,4,5,6,7,8,9]
+//Create list of special characters
 var specialChars   = "!'#$%&()*+,-./:;<=>?@[]^_`{|}~".split("");
 specialChars.push('"');
 specialChars.push('/');
 
+//Takes 0 arguments and returns 1 string
 function generatePassword() {
 
   var selectionMade = 0;
@@ -18,7 +23,6 @@ function generatePassword() {
   var includeSpecial = validatePrompt(window.prompt("Do you wish to include special characters? (y/n)"));
   selectionMade = includeUpperCase + includeLowerCase + includeNumeric + includeSpecial
   
-
   while (selectionMade < 1) {
     window.alert("You must select at least one type of character to be included.");
     var includeUpperCase = validatePrompt(window.prompt("Do you wish to include uppercase letters? (y/n)"));
@@ -29,6 +33,7 @@ function generatePassword() {
 
   }
 
+  //Create super array of included characters
   var includedChars = [];
   
   if (includeUpperCase == 1) {
@@ -44,6 +49,7 @@ function generatePassword() {
     includedChars = includedChars.concat(specialChars);
   }
 
+  //Create password length variable
   var acceptedLength = 0;
   var passwordLength = 0;
   while (acceptedLength == 0) {
@@ -53,8 +59,7 @@ function generatePassword() {
     }
   }
 
-  console.log(passwordLength)
-
+  //Build password
   var password = "";
 
   for (i = 0; i < passwordLength; i++) {
@@ -65,6 +70,7 @@ function generatePassword() {
 
 }
 
+//Accepts 1 argument and returns 1 or 0
 function validatePrompt(userResponse) {
   if (userResponse.toLowerCase() == "y") {
     return 1;
