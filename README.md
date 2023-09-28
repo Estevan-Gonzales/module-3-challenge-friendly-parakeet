@@ -11,7 +11,7 @@ Through this project, I have learned how to write concise and valuable code usin
 ### Option 1:
 1. Inspect written JavaScript code directly on Github.
 2. View Github page of raw JavaScript code using the link below:    
-   https://github.com/Estevan-Gonzales/module-3-challenge-password-generator/blob/main/script.html
+   https://github.com/Estevan-Gonzales/module-3-challenge-password-generator/blob/main/script.js
 3. Use Developer Tools to view meta data associated with the compiled JavaScript found below:      
    https://estevan-gonzales.github.io/module-3-challenge-password-generator.
 
