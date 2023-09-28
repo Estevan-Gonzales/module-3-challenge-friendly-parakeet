@@ -9,11 +9,11 @@ Through this project, I have learned how to write concise and valuable code usin
 ## Installation
 
 ### Option 1:
-1. Inspect written HTML code directly on Github
-2. View Github page of raw HTML code using the link below:    
-   https://github.com/Estevan-Gonzales/module-3-challenge-password-generator/blob/main/index.html
-3. Use Developer Tools to view meta data associated with the compiled HTML/CSS found below:      
-   https://estevan-gonzales.github.io/module-3-challenge-password-generator
+1. Inspect written JavaScript code directly on Github.
+2. View Github page of raw JavaScript code using the link below:    
+   https://github.com/Estevan-Gonzales/module-3-challenge-password-generator/blob/main/script.html
+3. Use Developer Tools to view meta data associated with the compiled JavaScript found below:      
+   https://estevan-gonzales.github.io/module-3-challenge-password-generator.
 
 ### Option 2:
 1. Clone this repository to your local machine.
